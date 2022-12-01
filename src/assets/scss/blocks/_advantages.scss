@@ -1,0 +1,48 @@
+.advantages {
+    &__inner {
+        display: flex;
+        gap: 15px 58px;
+    }
+
+    &__item {
+        background: #FFFFFF;
+        border-radius: 15px;
+        width: 380px;
+        height: 175px;
+        padding: 42px 19px 41px 25px;
+        display: flex;
+        align-items: center;
+        transition: 0.4s;
+
+        &:hover {
+            transform: scale3d(1.05, 1.05, 1);
+            box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        &-ico {
+            width: 95px;
+            height: 95px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-desc {
+            margin-left: 21px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            color: #000000;
+        }
+
+        &-text {
+            margin-top: 5px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+}

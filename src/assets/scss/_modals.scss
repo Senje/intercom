@@ -1,0 +1,45 @@
+#wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__feedback {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+
+    button {
+        display: block;
+        margin-top: 20px;
+    }
+
+    &.active {
+        visibility: visible;
+    }
+}

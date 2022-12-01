@@ -1,0 +1,42 @@
+.feedback {
+    &__block {
+        height: 360px;
+        background-color: #fff;
+        display: flex;
+        border-radius: 15px;
+
+        &-content {
+            padding: 40px 100px 40px 38px;
+        }
+
+        &-image {
+            margin-left: auto;
+
+            img {
+                width: 630px;
+                display: block;
+                object-fit: fill;
+                height: 100%;
+                border-radius: 0px 15px 15px 0px;
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 59px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px 26px;
+        .feedback__form-name, .feedback__form-phone, .feedback__form-street {
+            flex-basis: 45%;
+        }
+        .feedback__form-house, .feedback__form-apartment {
+            width: 20%;
+        }
+        &-bottom {
+            margin-top: 58px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

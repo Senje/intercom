@@ -1,0 +1,52 @@
+.footer {
+    background-color: #323232;
+    padding: 80px 0;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+
+    &__inner {
+        display: flex;
+        column-gap: 80px;
+        justify-content: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__item+&__item {
+        margin-top: 20px;
+    }
+
+    &__contacts {
+        text-align: center;
+        margin-left: auto;
+
+        .footer__title {
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
+
+    &__info {
+        margin-right: auto;
+    }
+
+    &__phone {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 10px;
+    }
+
+    &__soc {
+        margin-top: 33px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

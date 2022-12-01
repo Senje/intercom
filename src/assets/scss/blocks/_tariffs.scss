@@ -1,0 +1,117 @@
+.tariffs {
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+
+    &__slider {
+        display: flex;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    &__choose {
+        margin-top: auto;
+        margin-right: 36px;
+    }
+
+    &__archive {
+        align-self: flex-end;
+        margin-top: 19px;
+    }
+
+    &__image {
+        margin-top: 25px;
+        position: relative;
+        width: 252px;
+        height: 312px;
+
+        img {
+            filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+            object-fit: cover;
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn__main {
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:hover {
+                transform: translateX(-50%) scale3d(1.05, 1.05, 1)
+            }
+        }
+    }
+    .slick-list {
+        margin: 0 -18.5px;
+    }
+
+    &__item {
+        background-color: #fff;
+        height: 465px;
+        width: 300px;
+        border-radius: 15px;
+        transition: 0.4s;
+        margin: 0 18.5px;
+
+        &-header {
+            border-radius: 15px 15px 0px 0px;
+            padding: 15px 0 16px;
+
+            h4 {
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        &-body {
+            padding: 40px 53px 57px;
+            line-height: 20px;
+        }
+
+        &-ico {
+            margin-right: 10px;
+        }
+
+        &-paragraph {
+            display: flex;
+
+        }
+
+        &-paragraph+&-paragraph {
+            margin-top: 23px;
+        }
+
+        &-footer {
+            padding: 23px 15px 29px 17px;
+            display: flex;
+            align-items: center;
+        }
+
+        &-cost {
+            font-weight: 700;
+            font-size: 27px;
+        }
+
+        &-currency {
+            margin-left: 3px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+
+            hr {
+                height: 2px;
+                border: 0;
+                background-color: #000;
+            }
+        }
+
+        &-btn {
+            margin-left: 11px;
+        }
+    }
+}
